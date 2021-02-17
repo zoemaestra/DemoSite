@@ -1,5 +1,7 @@
 # CTEC3905 Assignment
 
+Lab work at https://github.com/zoemaestra/CTEC3905_labs
+
 This repository contains basic boilerplate code for you to get started with.
 
 You will need to replace the contents of these files with your own code.
