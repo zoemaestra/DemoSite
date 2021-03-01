@@ -106,7 +106,7 @@ p{
   transform: translateX(calc(50% - 8px));
 }
 
-#homeButton{
+a img{
   width: 0;
   height: 0;
   padding: 0 0;
