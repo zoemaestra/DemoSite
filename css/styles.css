@@ -7,6 +7,8 @@ body{
   background-color: var(--bg-colour);
   color: var(--fg-colour);
   font-family: Poppins;
+  margin: 0 0;
+  width: 100%;
 }
 
 :root {
@@ -14,12 +16,25 @@ body{
   --fg-colour: #000000;
 }
 
+#mobileHead{
+  background-color: #171720;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#mobileHead img{
+  width: 70px;
+  height: 70px;
+	border-radius: 50%;
+}
+
 nav {
   display: flex;
   flex-direction: column;
   position: fixed;
   width: 100%;
-  transform: translateX(96vw);
+  transform: translateX(100%);
   transition: 0.5s;
 }
 
@@ -44,8 +59,16 @@ nav.open {
   transform: translateX(50%);
 }
 
+nav img{
+  display: none;
+}
+
 h1{
-  margin-top: 80px;
+  margin: 10px 10px;
+}
+
+p{
+  margin: 10px 10px;
 }
 
 #menuToggler {
@@ -65,7 +88,7 @@ h1{
   font-size: 40px;
   top: 0;
   z-index: 1;
-  transform: translateX(calc(100% - 100px));
+  transform: translateX(calc(100% - 110px));
   transition: 0.54s;
 }
 
@@ -96,7 +119,53 @@ h1{
     position: fixed;
     flex-direction: row;
     justify-content: flex-end;
-    margin: 0px -10px;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    width: 100%;
+    top: 0;
+    transform: none;
+    background-color: #171720;
+  }
+  nav a,#themeToggler {
+    font-size: 12px;
+    margin: 5px;
+  }
+  nav img{
+    display: inherit;
+    position: fixed;
+    top: 12px;
+    left: 10px;
+  	width: 45px;
+    height: 45px;
+  	border-radius: 50%;
+  }
+
+  h1 {
+    margin-top: 80px;
+  }
+  #mobileHead{
+    display: none;
+  }
+}
+
+/* DESKTOP STYLES */
+/* applies to screens wider than 999px*/
+@media screen and (min-width: 1000px) {
+  body{
+    background-color: var(--bg-colour);
+    color: var(--fg-colour);
+    font-family: Poppins;
+    padding: 0 0;
+  }
+  #menuToggler {
+    display: none;
+  }
+  nav {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0px 0px;
     padding: 10px 0px;
     width: 100%;
     top: 0;
@@ -107,34 +176,20 @@ h1{
     font-size: 18px;
     margin: 5px;
   }
+  nav img{
+    display: inherit;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  	width: 55px;
+    height: 55px;
+  	border-radius: 50%;
+  }
 
   h1 {
     margin-top: 80px;
   }
-}
-
-/* DESKTOP STYLES */
-/* applies to screens wider than 999px
-@media screen and (min-width: 1000px) {
-  #menuToggler {
+  #mobileHead{
     display: none;
   }
-  nav {
-    display: flex;
-    position: static;
-    flex-direction: row;
-    flex-shrink: 0;
-    top: 0;
-    z-index: 1;
-    margin: 10px -10px;
-  }
-  nav a {
-    font-size: 18px;
-    margin: 5px;
-  }
-
-  h1 {
-    margin-top: 0px;
-  }
 }
-*/
