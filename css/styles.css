@@ -30,7 +30,7 @@ nav a,#themeToggler {
   margin: 10px;
   border-radius: 40px;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 nav a:hover,#themeToggler:hover {
@@ -41,8 +41,7 @@ nav a:hover,#themeToggler:hover {
 
 nav.open {
   display: flex;
-  transform: translateX(55vw);
-  /*transform: translateX(0);*/
+  transform: translateX(50%);
 }
 
 h1{
@@ -66,7 +65,7 @@ h1{
   font-size: 40px;
   top: 0;
   z-index: 1;
-  transform: translateX(80vw);
+  transform: translateX(calc(100% - 100px));
   transition: 0.54s;
 }
 
@@ -76,7 +75,8 @@ h1{
 
 }
 #menuToggler.open {
-  transform: translateX(58vw);
+  /*transform: translateX(58vw);*/
+  transform: translateX(calc(50% - 8px));
 }
 
 /* TABLET AND DESKTOP STYLES */
