@@ -1,7 +1,7 @@
 "use strict";
 
-let bgcolour = "#FFFFFF";
-let fgcolour = "#000000";
+let bgcolour = "#E8E8DF";
+let fgcolour = "#171720";
 
 menuToggler.addEventListener('click', ev => {
   menu.classList.toggle('open');
@@ -9,15 +9,15 @@ menuToggler.addEventListener('click', ev => {
 });
 
 themeToggler.addEventListener('click', ev => {
-  if (bgcolour == "#FFFFFF")
+  if (bgcolour == "#E8E8DF")
   {
     bgcolour = "#171720";
-    fgcolour = "#FFFFFF";
+    fgcolour = "#E8E8DF";
   }
   else
   {
-    bgcolour = "#FFFFFF";
-    fgcolour = "#000000";
+    bgcolour = "#E8E8DF";
+    fgcolour = "#171720";
   }
   document.documentElement.style.setProperty('--bg-colour', bgcolour);
   document.documentElement.style.setProperty('--fg-colour', fgcolour);
