@@ -17,6 +17,9 @@ body{
 }
 
 #mobileHead{
+  position: fixed;
+  width: 100%;
+  top: 0;
   background-color: #171720;
   padding-left: 10px;
   padding-top: 10px;
@@ -26,13 +29,13 @@ body{
 #mobileHead img{
   width: 70px;
   height: 70px;
-	border-radius: 50%;
 }
 
 nav {
   display: flex;
   flex-direction: column;
   position: fixed;
+  top: 90px;
   width: 100%;
   transform: translateX(100%);
   transition: 0.5s;
@@ -65,6 +68,7 @@ nav img{
 
 h1{
   margin: 10px 10px;
+  margin-top: 90px;
 }
 
 p{
@@ -134,16 +138,17 @@ p{
     background-color: #171720;
   }
   nav a,#themeToggler {
-    font-size: 12px;
+    font-size: 18px;
     margin: 5px;
   }
   nav img{
     display: inherit;
     position: fixed;
-    top: 12px;
+    top: 10px;
     left: 10px;
-  	width: 45px;
-    height: 45px;
+  	width: 55px;
+    height: 55px;
+  	border-radius: 50%;
   }
 
   h1 {
@@ -153,6 +158,7 @@ p{
     display: none;
   }
 }
+
 
 /* DESKTOP STYLES */
 /* applies to screens wider than 999px*/
