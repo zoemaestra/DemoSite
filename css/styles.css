@@ -1,6 +1,19 @@
+
 /* MOBILE AND GLOBAL STYLES */
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  background-color: var(--bg-colour);
+  color: var(--fg-colour);
+  font-family: Poppins;
+}
+
+:root {
+  --bg-colour: #ffffff;
+  --fg-colour: #000000;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -10,7 +23,7 @@ nav {
   transition: 0.5s;
 }
 
-nav a {
+nav a,#themeToggler {
   background-color: #FF0070;
   color: white;
   padding: 10px 20px;
@@ -20,7 +33,7 @@ nav a {
   font-size: 28px;
 }
 
-nav a:hover {
+nav a:hover,#themeToggler:hover {
   background-color: #FF5060;
   color: white;
   transition: background-color 0.4s;
@@ -66,9 +79,15 @@ h1{
   transform: translateX(58vw);
 }
 
-/* TABLET STYLES */
+/* TABLET AND DESKTOP STYLES */
 /* applies to screens wider than 499px */
 @media screen and (min-width: 500px) {
+  body{
+    background-color: var(--bg-colour);
+    color: var(--fg-colour);
+    font-family: Poppins;
+    padding: 0 0;
+  }
   #menuToggler {
     display: none;
   }
@@ -84,7 +103,7 @@ h1{
     transform: none;
     background-color: #171720;
   }
-  nav a {
+  nav a,#themeToggler {
     font-size: 18px;
     margin: 5px;
   }
