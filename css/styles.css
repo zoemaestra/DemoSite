@@ -15,18 +15,20 @@ body{
   margin: 0 0;
   width: 100%;
   height: 100%;
+  transition: 1s;
 }
 
 :root {
   --bg-colour: #E8E8DF;
   --fg-colour: #171720;
+  --nav-colour: #171720;
 }
 
 #mobileHead{
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #171720;
+  background-color: var(--nav-colour);
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -154,7 +156,7 @@ footer a{
     width: 100%;
     top: 0;
     transform: none;
-    background-color: #171720;
+    background-color: var(--nav-colour);
   }
   nav a,#themeToggler {
     font-size: 18px;
@@ -196,7 +198,7 @@ footer a{
     top: 0;
     transform: none;
     transition: 0s;
-    background-color: #171720;
+    background-color: var(--nav-colour);
   }
   nav a,#themeToggler {
     font-size: 18px;
