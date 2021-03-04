@@ -57,10 +57,11 @@ nav a,#themeToggler {
   border-radius: 40px;
   text-decoration: none;
   font-size: 24px;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 nav a:hover,#themeToggler:hover {
-  background-color: #FF5060;
+  background-color: #FF7070;
   color: white;
   transition: background-color 0.4s;
 }
