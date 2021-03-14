@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <title>P242391 Page 3</title>
+  <title>P2423891 - Discord Bot</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
@@ -16,50 +16,35 @@
   <div id="menuToggler">&#8801;</div>
   <nav id="menu">
     <a class="homeButton" href="index.html"><img src="images/icon.png" alt="Home"></a>
-    <a href="page1.html">Page 1</a>
-    <a href="page2.html">Page 2</a>
-    <a href="page3.html">Page 3</a>
+    <a href="page1.html">MoagCoin</a>
+    <a href="page2.html">Timetable</a>
+    <a href="page3.html">Discord Bot</a>
     <div id="themeToggler"><a href="#">&#128262;</a></div>
   </nav>
-  <h1>CTEC3905 Front End Web Development - Page 3</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
+  <header>
+    <img id="headerimg" src="images/assistant.png" alt="">
+    <h1>Assistant Discord Bot</h1>
+    <h2><span id="bio"></span></h2>
+    <h3 id="stats"></h3>
+    <h3><a href="" id="gitUrl">View on GitHub</a></h3>
+  </header>
+  <section>
+    <h3>Intro</h3>
+    <p>The Assistant bot is a bot I have made for use on a Discord server. It has multiple features for the server, adding functionality other off the shelf bots don't provide.</p>
+    <h3>Features</h3>
+    <p>One of the most used features is the specs feature. This scrapes phone and tablet specifications from devicespecifications.com and shows it in an easy to read format in an embed message.</p>
+    <img src="images/db1.png" alt="">
+    <p>Another user feature is the linkme feature, which links Google Play Store apps and shows relevant information about the app. It also automatically converts AMP links to regular web links instead when AMP links are posted.</p>
+    <img src="images/db2.png" alt="">
+    <p>There are some moderation features too, mostly to prevent users who are known to cause problems from joining.</p>
+    <p>The bot is hosted on an AWS EC2 instance and has continuous integration set up with Travis and Docker, so any pushes to the main branch on GitHub are built into a Docker images, which are uploaded to Docker Hub and then pulled to the server and automatically run.</p>
+  </section>
   <footer>
     <p>
       © Zoe Jones 2021
     </p>
     <a href="#" onclick="scrollTop">Back to top</a>
   </footer>
-  <script type="text/javascript" src="./js/script.js"></script>
+  <script id="script" type="text/javascript" mode="DiscordAssistant" src="./js/script.js"></script>
 </body>
 </html>

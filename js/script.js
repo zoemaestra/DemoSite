@@ -3,6 +3,7 @@
 let bgcolour = localStorage.getItem("Theme");
 let fgcolour = "";
 let navcolour = "";
+let url = "";
 
 function themeSet(theme) {
   if (theme == "#171720")
@@ -39,3 +40,25 @@ themeToggler.addEventListener('click', ev => {
 window.addEventListener('storage', () => {
   themeSet(localStorage.getItem("Theme"));
 });
+
+async function loadObject() {
+  if (document.getElementById("script").getAttribute('mode') == "home")
+  {url = 'https://api.github.com/users/zoemaestra';}
+  else {url = `https://api.github.com/repos/zoemaestra/${document.currentScript.getAttribute('mode')}`;}
+  let response = await fetch(url);
+  return response.json();
+}
+
+async function insertUserDetails(obj){
+  if (document.getElementById("script").getAttribute('mode') == "home"){
+    document.getElementById("headerimg").src = await obj.avatar_url;
+    document.getElementById("bio").innerHTML = await obj.bio;
+    document.getElementById("stats").innerHTML = await `${obj.followers} followers`;
+  }
+  else{
+    document.getElementById("bio").innerHTML = await obj.description;
+    document.getElementById("stats").innerHTML =await `${obj.stargazers_count} stars`;
+  }
+  document.getElementById("gitUrl").href = await obj.html_url;
+}
+loadObject().then(insertUserDetails);

@@ -32,6 +32,7 @@ body{
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
+  z-index: 998;
 }
 
 #mobileHead img{
@@ -47,6 +48,7 @@ nav {
   width: 100%;
   transform: translateX(100%);
   transition: 0.5s;
+  z-index: 999;
 }
 
 nav a,#themeToggler {
@@ -75,9 +77,33 @@ nav img{
   display: none;
 }
 
+header{
+	border-bottom: 1px solid var(--fg-colour);
+	text-align: center;
+	position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 120px;
+}
+header img{
+	width: 160px;
+  height: 160px;
+	border-radius: 50%;
+}
+header h1{
+	font-weight: 600;
+	letter-spacing: -2px;
+	font-size: 3em;
+	color: var(--fg-colour);
+}
+
 h1{
-  margin: 10px 10px;
-  margin-top: 90px;
+  text-align: center;
+}
+
+h3 a{
+  text-decoration: none;
+  color: var(--fg-colour);
 }
 
 p{
@@ -103,6 +129,7 @@ p{
   z-index: 1;
   transform: translateX(calc(100% - 110px));
   transition: 0.54s;
+  z-index: 999;
 }
 
 #menuToggler:hover {
@@ -122,12 +149,35 @@ p{
   margin: 0 0;
 }
 
+section {
+  margin: auto;
+  width: 90vw;
+  align-items: center;
+  padding: 10px;
+}
+
+section img {
+  display: block;
+  max-width:100%;
+  max-height:550px;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+section h3 {
+  text-align: center;
+}
+
 footer{
   margin-top: auto;
   width: auto;
   display: flex;
   flex-direction: row;
-  background-color: #171720;
+  background-color: var(--nav-colour);
   color: #E8E8DF;
   padding: 1px 1px;
 }
@@ -139,6 +189,10 @@ footer a{
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 10px;
+}
+
+span {
+    color: #ff0070;
 }
 
 /* TABLET AND DESKTOP STYLES */
@@ -174,16 +228,18 @@ footer a{
   	border-radius: 50%;
     transition: box-shadow 0.2s ease-in-out;
   }
-
   nav img:hover{
     box-shadow: 0px 0px 20px #ff0070;
   }
-
-  h1 {
-    margin-top: 80px;
-  }
   #mobileHead{
     display: none;
+  }
+  header{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  section img {
+    max-height:350px;
   }
 }
 
@@ -191,6 +247,9 @@ footer a{
 /* DESKTOP STYLES */
 /* applies to screens wider than 999px*/
 @media screen and (min-width: 1000px) {
+  .header{
+    align-items: center;
+  }
   #menuToggler {
     display: none;
   }
@@ -221,11 +280,22 @@ footer a{
     height: 55px;
   	border-radius: 50%;
   }
-
-  h1 {
-    margin-top: 80px;
+  header{
+  	border-bottom: 1px solid var(--fg-colour);
+  	text-align: center;
+  	position: relative;
+    margin: auto;
+    margin-top: 120px;
+    width: 50vw;
   }
   #mobileHead{
     display: none;
+  }
+  section {
+    width: 50vw;
+  }
+  section img {
+    margin-top: 5px;
+    max-height:450px;
   }
 }

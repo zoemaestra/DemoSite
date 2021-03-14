@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <title>P242391 Page 1</title>
+  <title>P2423891 - MoagCoin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
@@ -16,50 +16,36 @@
   <div id="menuToggler">&#8801;</div>
   <nav id="menu">
     <a class="homeButton" href="index.html"><img src="images/icon.png" alt="Home"></a>
-    <a href="page1.html">Page 1</a>
-    <a href="page2.html">Page 2</a>
-    <a href="page3.html">Page 3</a>
+    <a href="page1.html">MoagCoin</a>
+    <a href="page2.html">Timetable</a>
+    <a href="page3.html">Discord Bot</a>
     <div id="themeToggler"><a href="#">&#128262;</a></div>
   </nav>
-  <h1>CTEC3905 Front End Web Development - Page 1</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
+  </div class="header">
+    <header>
+      <img id="headerimg" src="images/MoagCoin.gif" alt="MoagCoin Icon">
+      <h1>MoagCoin</h1>
+      <h2><span id="bio"></span></h2>
+      <h3 id="stats"></h3>
+      <h3><a href="" id="gitUrl">View on GitHub</a></h3>
+    </header>
+  </div>
+  <section>
+    <img src="images/mc1.png" alt="MoagCoin mining utility screenshot.">
+    <h3>Intro</h3>
+    <p>MoagCoin was a functional proof of work cryptocurrency I wrote in Python. It was created as a joke with a friend as a parody of scam cryptocurrencies like BitConnect, advertising fake features like negative transaction latency and an advanced AI that meant it was impossible to lose money. Promotional material was made for it too, by photoshopping Soviet space program posters.</p>
+    <h3>How it is made</h3>
+    <p>Both the mining utility and the server is written in Python 3. The UI is with Tkinter and the server uses Flask. Mining is done when the server issues the client a block to mine. The miner tries to find a hash with a set amount of zeros at the start, once found it will tell the server the string (which uses a hash of the previous block) that creates that hash. The server verifies and issues a mining reward to the client. Because this was run on a small scale, to prevent abuse, mining rewards are lower depending on how quickly it's done. This was to give users with lower power PCs a chance and to try and prevent users from using online servers like Google Cloud to mine far faster than anyone else.</p>
+    <img src="images/mc2.png" alt="Promo poster for the coin in the style of propaganda for the soviet space program.">
+    <h3>Features</h3>
+    <p>The mining utility originally played a random song from a provided selection. This included Here comes The Money, keygen music, a MIDI version of a Skrillex song and various others. It mined on the CPU and was able to use multiple cores, giving the user the option to set how many would be used with a slider that had the max value at however many cores the user had. The miner utility had a wallet where the user could see their address and send transactions to others, as well as view their own inbound/outbound transactions. This included the address it was from and the status (ie if it had been confirmed or not). The utility's design had a "hacker" aesthetic, with green text and a black background.</p>
+  </section>
   <footer>
     <p>
       © Zoe Jones 2021
     </p>
     <a href="#" onclick="scrollTop">Back to top</a>
   </footer>
-  <script type="text/javascript" src="./js/script.js"></script>
+  <script id="script" type="text/javascript" mode="moagcoin" src="./js/script.js"></script>
 </body>
 </html>

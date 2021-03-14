@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <title>P242391 Page 2</title>
+  <title>P2423891 - Timetable</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
@@ -16,50 +16,36 @@
   <div id="menuToggler">&#8801;</div>
   <nav id="menu">
     <a class="homeButton" href="index.html"><img src="images/icon.png" alt="Home"></a>
-    <a href="page1.html">Page 1</a>
-    <a href="page2.html">Page 2</a>
-    <a href="page3.html">Page 3</a>
+    <a href="page1.html">MoagCoin</a>
+    <a href="page2.html">Timetable</a>
+    <a href="page3.html">Discord Bot</a>
     <div id="themeToggler"><a href="#">&#128262;</a></div>
   </nav>
-  <h1>CTEC3905 Front End Web Development - Page 2</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-  </p>
+  </div class="header">
+    <header>
+      <img id="headerimg" src="images/timetable.png" alt="">
+      <h1>Teacher Timetable System</h1>
+      <h2><span id="bio"></span></h2>
+      <h3 id="stats"></h3>
+      <h3><a href="" id="gitUrl">View on GitHub</a></h3>
+    </header>
+  </div>
+  <section>
+    <img src="images/tt1.png" alt="">
+    <h3>Intro</h3>
+    <p>The Teacher Timetable is part of a wider system build for IMAT3903 Team Development Project. It is made in C# ASP.NET and is part of a single Visual Studio solution containing the team's projects.</h3>
+    <img src="images/tt2.png" alt="">
+    <h3>Features</h3>
+    <p>The Timetable system is designed for two types of user; the teacher and the admin. Teachers can view their timetables and change the rooms they teach in depending on room availability and if the room is assigned to their subject. They can also message admins for support in case they need free periods changed. Teachers can change their own passwords.</p>
+    <p>Admins can manage users and their details, edit timetables, delete users, add/edit/delete rooms, contact teachers and reply to support messages and change if user accounts are admins or not. Logins are done with password hashing and information is stored on an Azure database using stored procedures to avoid SQL injection attacks.</p>
+    <p>The system has unit tests set up to ensure that the code works as expected and user inputs should not cause issues.</p>
+  </section>
   <footer>
     <p>
       © Zoe Jones 2021
     </p>
     <a href="#" onclick="scrollTop">Back to top</a>
   </footer>
-  <script type="text/javascript" src="./js/script.js"></script>
+  <script id="script" type="text/javascript" mode="TeamDev2020" src="./js/script.js"></script>
 </body>
 </html>
