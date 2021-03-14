@@ -42,15 +42,15 @@ window.addEventListener('storage', () => {
 });
 
 async function loadObject() {
-  if (document.getElementById("script").getAttribute('mode') == "home")
+  if (document.getElementById("script").getAttribute('class') == "home")
   {url = 'https://api.github.com/users/zoemaestra';}
-  else {url = `https://api.github.com/repos/zoemaestra/${document.currentScript.getAttribute('mode')}`;}
+  else {url = `https://api.github.com/repos/zoemaestra/${document.currentScript.getAttribute('class')}`;}
   let response = await fetch(url);
   return response.json();
 }
 
 async function insertUserDetails(obj){
-  if (document.getElementById("script").getAttribute('mode') == "home"){
+  if (document.getElementById("script").getAttribute('class') == "home"){
     document.getElementById("headerimg").src = await obj.avatar_url;
     document.getElementById("bio").innerHTML = await obj.bio;
     document.getElementById("stats").innerHTML = await `${obj.followers} followers`;
