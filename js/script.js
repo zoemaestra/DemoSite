@@ -11,12 +11,14 @@ function themeSet(theme) {
     bgcolour = "#171720";
     fgcolour = "#E8E8DF";
     navcolour = "#2B2B3B";
+    document.getElementById("themeToggler").innerHTML = "<a href='#'>☀️</a>";
   }
   else
   {
     bgcolour = "#E8E8DF";
     fgcolour = "#171720";
     navcolour = "#171720";
+    document.getElementById("themeToggler").innerHTML = "<a href='#'>🌑</a>";
   }
   bgcolour = theme;
   document.documentElement.style.setProperty('--bg-colour', bgcolour);
