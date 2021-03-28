@@ -166,6 +166,7 @@ section {
   align-items: center;
   padding: 10px;
   border-top: 1px solid var(--fg-colour);
+  transition: 1s;
 }
 
 section h3 {
@@ -179,8 +180,10 @@ section h2 {
 #gallery{
   display: flex;
   flex-direction: row;
-  height: 550px;
+  height: 300px;
   border-top: 0px solid var(--bg-colour);
+  transition: 1s;
+  padding: 0;
 }
 
 #gallery button{
@@ -189,22 +192,22 @@ section h2 {
   border: 0;
   border-radius: 40px;
   height: 100%;
-  width: 5vw;
+  width: 10px;
   font-size: 25px;
   transition: 1s;
+  padding: 0;
 }
 
 #gallery img{
   animation: imagefade 1s linear forwards;
   display: block;
-  max-width:100%;
-  max-height:550px;
+  max-width:75vw;
+  max-height:350px;
   width: auto;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  margin-bottom: 10px;
 }
 
 @keyframes imagefade {
@@ -282,6 +285,16 @@ span {
   section img {
     max-height:350px;
   }
+  #gallery{
+    height: 550px;
+  }
+  #gallery button{
+    width: 5vw;
+  }
+  #gallery img{
+    max-width:100%;
+    max-height:550px;
+  }
 }
 
 
@@ -322,7 +335,6 @@ span {
   	border-radius: 50%;
   }
   header{
-  	border-bottom: 1px solid var(--fg-colour);
   	text-align: center;
   	position: relative;
     margin: auto;
