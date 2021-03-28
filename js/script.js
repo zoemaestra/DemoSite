@@ -4,6 +4,7 @@ let bgcolour = localStorage.getItem("Theme");
 let fgcolour = "";
 let navcolour = "";
 let url = "";
+let currentImage = 1;
 
 function themeSet(theme) {
   if (theme == "#171720")
@@ -42,6 +43,19 @@ themeToggler.addEventListener('click', ev => {
 window.addEventListener('storage', () => {
   themeSet(localStorage.getItem("Theme"));
 });
+
+function gallery(direction) {
+  let max = 2;
+  if (direction == 1){
+    if (currentImage == max){currentImage = 1;}
+    else{currentImage++;}
+  }
+  else{
+    if (currentImage == 1){currentImage = max;}
+    else{currentImage--;}
+  }
+  document.getElementById("galleryImg").src = `images/${document.getElementById("script").getAttribute('class')}/${currentImage}.png`
+}
 
 async function loadObject() {
   if (document.getElementById("script").getAttribute('class') == "home")

@@ -79,7 +79,6 @@ nav img{
 }
 
 header{
-	border-bottom: 1px solid var(--fg-colour);
 	text-align: center;
 	position: relative;
   margin-left: 20px;
@@ -166,9 +165,37 @@ section {
   width: 90vw;
   align-items: center;
   padding: 10px;
+  border-top: 1px solid var(--fg-colour);
 }
 
-section img {
+section h3 {
+  text-align: center;
+}
+
+section h2 {
+  text-align: center;
+}
+
+#gallery{
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+  border-top: 0px solid var(--bg-colour);
+}
+
+#gallery button{
+  background-color: var(--bg-colour);
+  color: var(--fg-colour);
+  border: 0;
+  border-radius: 40px;
+  height: 100%;
+  width: 5vw;
+  font-size: 25px;
+  transition: 1s;
+}
+
+#gallery img{
+  animation: imagefade 1s linear forwards;
   display: block;
   max-width:100%;
   max-height:550px;
@@ -176,12 +203,13 @@ section img {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-section h3 {
-  text-align: center;
+@keyframes imagefade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 footer{
