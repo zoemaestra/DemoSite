@@ -48,7 +48,7 @@ nav {
   top: 90px;
   width: 100%;
   transform: translateX(100%);
-  transition: 0.5s;
+  transition: 1s;
   z-index: 999;
 }
 
@@ -166,7 +166,6 @@ section {
   align-items: center;
   padding: 10px;
   border-top: 1px solid var(--fg-colour);
-  transition: 1s;
 }
 
 section h3 {
@@ -259,8 +258,8 @@ span {
     background-color: var(--nav-colour);
   }
   nav a,#themeToggler {
-    font-size: 18px;
-    padding: 10px 15px;
+    font-size: 16px;
+    padding: 10px 8px;
     margin: 5px;
   }
   nav img{
