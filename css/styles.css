@@ -196,6 +196,7 @@ section h2 {
   font-size: 25px;
   transition: 1s;
   padding: 0;
+  outline: none;
 }
 
 #gallery img{
