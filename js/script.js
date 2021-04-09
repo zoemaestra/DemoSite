@@ -7,6 +7,7 @@ let url = "";
 let currentImage = 1;
 
 function themeSet(theme) {
+  //Function to set the CSS colour variables used for background, foreground and nav background
   if (theme == "#171720")
   {
     bgcolour = "#171720";
@@ -45,6 +46,7 @@ window.addEventListener('storage', () => {
 });
 
 function gallery(direction) {
+  //Function to change the image shown when the gallery buttons are clicked
   let max = 2;
   if (direction == 1){
     if (currentImage == max){currentImage = 1;}
@@ -58,14 +60,15 @@ function gallery(direction) {
 }
 
 async function loadObject() {
-  if (document.getElementById("script").getAttribute('class') == "home")
-  {url = 'https://api.github.com/users/zoemaestra';}
+  //Loads information to be shown on the page from GitHub
+  if (document.getElementById("script").getAttribute('class') == "home") {url = 'https://api.github.com/users/zoemaestra';}
   else {url = `https://api.github.com/repos/zoemaestra/${document.currentScript.getAttribute('class')}`;}
   let response = await fetch(url);
   return response.json();
 }
 
 async function insertUserDetails(obj){
+  //Inserts loaded details into the relevant page
   if (document.getElementById("script").getAttribute('class') == "home"){
     document.getElementById("headerimg").src = await obj.avatar_url;
     document.getElementById("bio").innerHTML = await obj.bio;
