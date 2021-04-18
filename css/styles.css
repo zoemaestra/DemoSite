@@ -48,7 +48,7 @@ nav {
   top: 90px;
   width: 100%;
   transform: translateX(100%);
-  transition: 1s;
+  transition: 0.54s;
   z-index: 999;
 }
 
@@ -255,6 +255,7 @@ span {
     width: 100%;
     top: 0;
     transform: none;
+    transition: 1s;
     background-color: var(--nav-colour);
   }
   nav a,#themeToggler {
