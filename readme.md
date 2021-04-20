@@ -1,19 +1,3 @@
-# CTEC3905 Assignment
+# CTEC3905 P2423891 Assignment
 
-Lab work at https://github.com/zoemaestra/CTEC3905_labs
-
-This repository contains basic boilerplate code for you to get started with.
-
-You will need to replace the contents of these files with your own code.
-
-## index.html
-
-The `index.html` file includes a basic template with a link to the `css/styles.css` file and a script tag after the main content which links to the `js/scripts.js` file.
-
-## css/styles.css
-
-The `css/styles.css` file contains a basic starting template for a responsive page.
-
-## js/scripts.js
-
-The `js/scripts.js` file contains a simple console.log statement to confirm that it is being executed.
+This repository contains my CTEC3905 assignment - the theme is my own work. It has four pages, one being the home screen and the other three being about projects I have worked on. It pulls information from the GitHub repos they are on and has a dark mode which persists between sessions. It's responsive and works on mobile, tablets and desktops.
