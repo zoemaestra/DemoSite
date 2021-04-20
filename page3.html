@@ -32,19 +32,20 @@
   <section>
     <h3>Intro</h3>
     <p>The Assistant bot is a bot I have made for use on a Discord server. It has multiple features for the server, adding functionality other off the shelf bots don't provide.</p>
+    <h3>How it is made</h3>
+    <p>The bot is written in Python with <span><a href="https://pypi.org/project/discord.py/">discord.py</a></span></p>
+    <p>It is hosted on an AWS EC2 instance and has continuous integration set up with Travis and Docker, so any pushes to the main branch on GitHub are built into a Docker images, which are uploaded to Docker Hub and then pulled to the server and automatically run.</p>
     <h3>Features</h3>
     <p>One of the most used features is the specs feature. This scrapes phone and tablet specifications from devicespecifications.com and shows it in an easy to read format in an embed message.</p>
     <p>Another user feature is the linkme feature, which links Google Play Store apps and shows relevant information about the app. It also automatically converts AMP links to regular web links instead when AMP links are posted.</p>
     <p>There are some moderation features too, mostly to prevent users who are known to cause problems from joining.</p>
-    <p>The bot is hosted on an AWS EC2 instance and has continuous integration set up with Travis and Docker, so any pushes to the main branch on GitHub are built into a Docker images, which are uploaded to Docker Hub and then pulled to the server and automatically run.</p>
-    <h3>Screenshots</h3>
   </section>
   <section>
     <h2>Gallery</h2>
     <section id="gallery">
-      <button onclick="gallery(-1)">&#10094;</button>
+      <button id="galleryForwardImg">&#10094;</button>
       <img id="galleryImg" src="images/DiscordAssistant/1.png" alt="Discord bot image.">
-      <button onclick="gallery(1)">&#10095;</button>
+      <button id="galleryBackwardImg">&#10095;</button>
     </section>
   </section>
   <footer>

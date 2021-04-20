@@ -31,6 +31,10 @@ function themeSet(theme) {
 
 themeSet(bgcolour);
 
+window.addEventListener('storage', () => {
+  themeSet(localStorage.getItem("Theme"));
+});
+
 menuToggler.addEventListener('click', ev => {
   menu.classList.toggle('open');
   menuToggler.classList.toggle('open');
@@ -41,8 +45,12 @@ themeToggler.addEventListener('click', ev => {
   else {themeSet("#171720");}
 });
 
-window.addEventListener('storage', () => {
-  themeSet(localStorage.getItem("Theme"));
+galleryForwardImg.addEventListener('click', ev => {
+  gallery(1)
+});
+
+galleryBackwardImg.addEventListener('click', ev => {
+  gallery(-1)
 });
 
 function gallery(direction) {

@@ -235,8 +235,9 @@ footer a{
   margin-right: 10px;
 }
 
-span {
+span,span a{
     color: #ff0070;
+    text-decoration: none;
 }
 
 /* TABLET AND DESKTOP STYLES */
