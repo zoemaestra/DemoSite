@@ -45,13 +45,16 @@ themeToggler.addEventListener('click', ev => {
   else {themeSet("#171720");}
 });
 
-galleryForwardImg.addEventListener('click', ev => {
-  gallery(1)
-});
+if (document.getElementById("script").getAttribute('class') != "home"){
+  //Prevent event listeners trying to work on page without the buttons
+  galleryForwardImg.addEventListener('click', ev => {
+    gallery(1)
+  });
 
-galleryBackwardImg.addEventListener('click', ev => {
-  gallery(-1)
-});
+  galleryBackwardImg.addEventListener('click', ev => {
+    gallery(-1)
+  });
+}
 
 function gallery(direction) {
   //Function to change the image shown when the gallery buttons are clicked
