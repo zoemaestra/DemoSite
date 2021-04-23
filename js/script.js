@@ -6,7 +6,7 @@ let navcolour = "";
 let url = "";
 let currentImage = 1;
 
-function themeSet(theme) {
+let themeSet = (theme) => {
   //Function to set the CSS colour variables used for background, foreground and nav background
   if (theme == "#171720")
   {
@@ -22,12 +22,11 @@ function themeSet(theme) {
     navcolour = "#171720";
     document.getElementById("themeToggler").innerHTML = "<a href='#'>🌑</a>";
   }
-  bgcolour = theme;
   document.documentElement.style.setProperty('--bg-colour', bgcolour);
   document.documentElement.style.setProperty('--fg-colour', fgcolour);
   document.documentElement.style.setProperty('--nav-colour', navcolour);
   localStorage.setItem("Theme", bgcolour);
-}
+};
 
 themeSet(bgcolour);
 
@@ -56,7 +55,7 @@ if (document.getElementById("script").getAttribute('class') != "home"){
   });
 }
 
-function gallery(direction) {
+let gallery = (direction) => {
   //Function to change the image shown when the gallery buttons are clicked
   let max = 2;
   if (direction == 1){
@@ -68,17 +67,17 @@ function gallery(direction) {
     else{currentImage--;}
   }
   document.getElementById("galleryImg").src = `images/${document.getElementById("script").getAttribute('class')}/${currentImage}.png`
-}
+};
 
-async function loadObject() {
+let loadObject = async () => {
   //Loads information to be shown on the page from GitHub
   if (document.getElementById("script").getAttribute('class') == "home") {url = 'https://api.github.com/users/zoemaestra';}
   else {url = `https://api.github.com/repos/zoemaestra/${document.currentScript.getAttribute('class')}`;}
   let response = await fetch(url);
   return response.json();
-}
+};
 
-async function insertUserDetails(obj){
+let insertUserDetails = async (obj) => {
   //Inserts loaded details into the relevant page
   if (document.getElementById("script").getAttribute('class') == "home"){
     document.getElementById("headerimg").src = await obj.avatar_url;
@@ -90,5 +89,6 @@ async function insertUserDetails(obj){
     document.getElementById("stats").innerHTML =await `${obj.stargazers_count} stars`;
   }
   document.getElementById("gitUrl").href = await obj.html_url;
-}
+};
+
 loadObject().then(insertUserDetails);
