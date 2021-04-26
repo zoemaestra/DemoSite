@@ -6,7 +6,7 @@ let navcolour = "";
 let url = "";
 let currentImage = 1;
 
-let themeSet = (theme) => {
+const themeSet = (theme) => {
   //Function to set the CSS colour variables used for background, foreground and nav background
   if (theme == "#171720"){
     bgcolour = "#171720";
@@ -53,7 +53,7 @@ if (document.getElementById("script").getAttribute('class') != "home"){
   });
 }
 
-let gallery = (direction) => {
+const gallery = (direction) => {
   //Function to change the image shown when the gallery buttons are clicked
   let max = 2;
   if (direction == 1) {
@@ -75,7 +75,7 @@ let gallery = (direction) => {
   document.getElementById("galleryImg").src = `images/${document.getElementById("script").getAttribute('class')}/${currentImage}.png`
 };
 
-let loadObject = async () => {
+const loadObject = async () => {
   //Loads information to be shown on the page from GitHub
   if (document.getElementById("script").getAttribute('class') == "home"){
     url = 'https://api.github.com/users/zoemaestra';
@@ -87,7 +87,7 @@ let loadObject = async () => {
   return response.json();
 };
 
-let insertUserDetails = async (obj) => {
+const insertUserDetails = async (obj) => {
   //Inserts loaded details into the relevant page
   if (document.getElementById("script").getAttribute('class') == "home"){
     document.getElementById("headerimg").src = await obj.avatar_url;
