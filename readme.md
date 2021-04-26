@@ -4,4 +4,4 @@ This repository contains my CTEC3905 assignment - the theme is my own work. It h
 
 ## Notes
 
-This has been developed for Google Chrome and tested in Mozilla Firefox. Using it in Firefox has a minor bug where it animates in the dark theme on every page load, this does not exist in Chrome.
+This has been developed for and tested in Google Chrome, but should still work in other major modern browsers.
