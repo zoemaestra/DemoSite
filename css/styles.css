@@ -1,12 +1,11 @@
-
 /* MOBILE AND GLOBAL STYLES */
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-html{
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
   height: 100%;
 }
-body{
+body {
   display: flex;
   flex-direction: column;
   background-color: var(--bg-colour);
@@ -19,12 +18,12 @@ body{
 }
 
 :root {
-  --bg-colour: #E8E8DF;
+  --bg-colour: #e8e8df;
   --fg-colour: #171720;
   --nav-colour: #171720;
 }
 
-#mobileHead{
+#mobileHead {
   position: fixed;
   width: 100%;
   top: 0;
@@ -36,7 +35,7 @@ body{
   transition: 1s;
 }
 
-#mobileHead img{
+#mobileHead img {
   width: 70px;
   height: 70px;
 }
@@ -52,8 +51,9 @@ nav {
   z-index: 999;
 }
 
-nav a,#themeToggler {
-  background-color: #FF0070;
+nav a,
+#themeToggler {
+  background-color: #ff0070;
   color: white;
   padding: 10px 20px;
   margin: 10px;
@@ -63,8 +63,9 @@ nav a,#themeToggler {
   transition: box-shadow 0.2s ease-in-out;
 }
 
-nav a:hover,#themeToggler:hover {
-  background-color: #FF7070;
+nav a:hover,
+#themeToggler:hover {
+  background-color: #ff7070;
   color: white;
   transition: background-color 0.4s;
 }
@@ -74,50 +75,50 @@ nav.open {
   transform: translateX(30%);
 }
 
-nav img{
+nav img {
   display: none;
 }
 
-header{
-	text-align: center;
-	position: relative;
+header {
+  text-align: center;
+  position: relative;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 120px;
 }
-header img{
-	width: 160px;
+header img {
+  width: 160px;
   height: 160px;
-	border-radius: 50%;
+  border-radius: 50%;
 }
-header h1{
-	font-weight: 600;
-	letter-spacing: -2px;
-	font-size: 3em;
-	color: var(--fg-colour);
+header h1 {
+  font-weight: 600;
+  letter-spacing: -2px;
+  font-size: 3em;
+  color: var(--fg-colour);
   transition: 1s;
 }
-header a{
-	color: var(--fg-colour);
-	transition: 1s;
+header a {
+  color: var(--fg-colour);
+  transition: 1s;
 }
 
-#buildstatus{
+#buildstatus {
   width: auto;
   height: auto;
-	border-radius: 0%;
+  border-radius: 0%;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-h3 a{
+h3 a {
   text-decoration: none;
   color: var(--fg-colour);
 }
 
-p{
+p {
   margin: 10px 10px;
 }
 
@@ -127,7 +128,7 @@ p{
   width: 100%;
   position: fixed;
   flex-shrink: 0;
-  background-color: #FF0070;
+  background-color: #ff0070;
   color: white;
   padding: 5px 20px;
   margin-top: 10px;
@@ -144,16 +145,15 @@ p{
 }
 
 #menuToggler:hover {
-  background-color: #FF5060;
+  background-color: #ff5060;
   color: white;
-
 }
 #menuToggler.open {
   /*transform: translateX(58vw);*/
   transform: translateX(calc(30% - 5px));
 }
 
-.homeButton{
+.homeButton {
   width: 0;
   height: 0;
   padding: 0 0;
@@ -176,7 +176,7 @@ section h2 {
   text-align: center;
 }
 
-#gallery{
+#gallery {
   display: flex;
   flex-direction: row;
   height: 300px;
@@ -186,7 +186,7 @@ section h2 {
   padding-bottom: 30px;
 }
 
-#gallery button{
+#gallery button {
   background-color: var(--bg-colour);
   color: var(--fg-colour);
   border: 0;
@@ -199,11 +199,11 @@ section h2 {
   outline: none;
 }
 
-#gallery img{
+#gallery img {
   animation: imagefade 1s linear forwards;
   display: block;
-  max-width:75vw;
-  max-height:350px;
+  max-width: 75vw;
+  max-height: 350px;
   width: auto;
   height: auto;
   margin-left: auto;
@@ -212,33 +212,38 @@ section h2 {
 }
 
 @keyframes imagefade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-footer{
+footer {
   margin-top: auto;
   width: auto;
   display: flex;
   flex-direction: row;
   background-color: var(--nav-colour);
-  color: #E8E8DF;
+  color: #e8e8df;
   padding: 1px 1px;
   transition: 1s;
 }
 
-footer a{
+footer a {
   margin-left: auto;
   text-decoration: none;
-  color: #E8E8DF;
+  color: #e8e8df;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 10px;
 }
 
-span,span a{
-    color: #ff0070;
-    text-decoration: none;
+span,
+span a {
+  color: #ff0070;
+  text-decoration: none;
 }
 
 /* TABLET AND DESKTOP STYLES */
@@ -260,51 +265,51 @@ span,span a{
     transition: 1s;
     background-color: var(--nav-colour);
   }
-  nav a,#themeToggler {
+  nav a,
+  #themeToggler {
     font-size: 16px;
     padding: 10px 8px;
     margin: 5px;
   }
-  nav img{
+  nav img {
     display: inherit;
     position: fixed;
     top: 10px;
     left: 10px;
-  	width: 55px;
+    width: 55px;
     height: 55px;
-  	border-radius: 50%;
+    border-radius: 50%;
     transition: box-shadow 0.2s ease-in-out;
   }
-  nav img:hover{
+  nav img:hover {
     box-shadow: 0px 0px 20px #ff0070;
   }
-  #mobileHead{
+  #mobileHead {
     display: none;
   }
-  header{
+  header {
     margin-left: 50px;
     margin-right: 50px;
   }
   section img {
-    max-height:350px;
+    max-height: 350px;
   }
-  #gallery{
+  #gallery {
     height: 550px;
   }
-  #gallery button{
+  #gallery button {
     width: 5vw;
   }
-  #gallery img{
-    max-width:100%;
-    max-height:550px;
+  #gallery img {
+    max-width: 100%;
+    max-height: 550px;
   }
 }
-
 
 /* DESKTOP STYLES */
 /* applies to screens wider than 999px*/
 @media screen and (min-width: 1000px) {
-  .header{
+  .header {
     align-items: center;
   }
   #menuToggler {
@@ -323,28 +328,29 @@ span,span a{
     transition: 1s;
     background-color: var(--nav-colour);
   }
-  nav a,#themeToggler {
+  nav a,
+  #themeToggler {
     font-size: 18px;
     padding: 10px 25px;
     margin: 5px;
   }
-  nav img{
+  nav img {
     display: inherit;
     position: fixed;
     top: 10px;
     left: 10px;
-  	width: 55px;
+    width: 55px;
     height: 55px;
-  	border-radius: 50%;
+    border-radius: 50%;
   }
-  header{
-  	text-align: center;
-  	position: relative;
+  header {
+    text-align: center;
+    position: relative;
     margin: auto;
     margin-top: 120px;
     width: 50vw;
   }
-  #mobileHead{
+  #mobileHead {
     display: none;
   }
   section {
@@ -352,6 +358,6 @@ span,span a{
   }
   section img {
     margin-top: 5px;
-    max-height:450px;
+    max-height: 450px;
   }
 }

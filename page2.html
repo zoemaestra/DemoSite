@@ -1,57 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <title>P2423891 - Timetable</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <title>P2423891 - Timetable</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-  <a id="top"></a>
-  <div id="mobileHead">
-    <a class="homeButton" href="index.html"><img src="images/icon.png" alt="Home"></a>
-  </div>
-  <div id="menuToggler">&#8801;</div>
-  <nav id="menu">
-    <a class="homeButton" href="index.html"><img src="images/icon.png" alt="Home"></a>
-    <a href="page1.html">MoagCoin</a>
-    <a href="page2.html">Timetable</a>
-    <a href="page3.html">Discord Bot</a>
-    <div id="themeToggler"><a href="#">&#128262;</a></div>
-  </nav>
-  <header>
-    <img src="images/timetable.png" alt="Timetable icon">
-    <h1>Teacher Timetable System</h1>
-    <h2><span id="bio">bio</span></h2>
-    <h3 id="stats">stats</h3>
-    <h3><a href="" id="gitUrl">View on GitHub</a></h3>
-  </header>
-  <section>
-    <h3>Intro</h3>
-    <p>The Teacher Timetable is part of a wider system build for IMAT3903 Team Development Project. It is made in C# ASP.NET and is part of a single Visual Studio solution containing the team's projects.</p>
-    <h3>How it is made</h3>
-    <p>The Timetable system is made with ASP.NET C# and an Azure DB as the data storage, with database changes being done with stored procedures for security. Logins and signups are done with password hashing and uses a GMail account to send out password reset codes - this part is shared with the rest of the team.</p>
-    <p>The system has unit tests set up to ensure that the code works as expected and user inputs do not cause issues.</p>
-    <h3>Features</h3>
-    <p>The Timetable system is designed for two types of user; the teacher and the admin. Teachers can view their timetables and change the rooms they teach in depending on room availability and if the room is assigned to their subject. They can also message admins for support in case they need free periods changed. Teachers can change their own passwords.</p>
-    <p>Admins can manage users and their details, edit timetables, delete users, add/edit/delete rooms, contact teachers and reply to support messages and change if user accounts are admins or not.</p>
-  </section>
-  <section>
-    <h2>Gallery</h2>
-    <section id="gallery">
-      <button id="galleryForwardImg">&#10094;</button>
-      <img id="galleryImg" src="images/teamdev2020/1.png" alt="Timetable image.">
-      <button id="galleryBackwardImg">&#10095;</button>
+  <body>
+    <a id="top"></a>
+    <div id="mobileHead">
+      <a class="homeButton" href="index.html"><img src="images/icon.png" alt="Home" /></a>
+    </div>
+    <div id="menuToggler">&#8801;</div>
+    <nav id="menu">
+      <a class="homeButton" href="index.html"><img src="images/icon.png" alt="Home" /></a>
+      <a href="page1.html">MoagCoin</a>
+      <a href="page2.html">Timetable</a>
+      <a href="page3.html">Discord Bot</a>
+      <div id="themeToggler"><a href="#">&#128262;</a></div>
+    </nav>
+    <header>
+      <img src="images/timetable.png" alt="Timetable icon" />
+      <h1>Teacher Timetable System</h1>
+      <h2><span id="bio">bio</span></h2>
+      <h3 id="stats">stats</h3>
+      <h3><a href="" id="gitUrl">View on GitHub</a></h3>
+    </header>
+    <section>
+      <h3>Intro</h3>
+      <p>
+        The Teacher Timetable is part of a wider system build for IMAT3903 Team Development Project. It is made in C#
+        ASP.NET and is part of a single Visual Studio solution containing the team's projects.
+      </p>
+      <h3>How it is made</h3>
+      <p>
+        The Timetable system is made with ASP.NET C# and an Azure DB as the data storage, with database changes being
+        done with stored procedures for security. Logins and signups are done with password hashing and uses a GMail
+        account to send out password reset codes - this part is shared with the rest of the team.
+      </p>
+      <p>
+        The system has unit tests set up to ensure that the code works as expected and user inputs do not cause issues.
+      </p>
+      <h3>Features</h3>
+      <p>
+        The Timetable system is designed for two types of user; the teacher and the admin. Teachers can view their
+        timetables and change the rooms they teach in depending on room availability and if the room is assigned to
+        their subject. They can also message admins for support in case they need free periods changed. Teachers can
+        change their own passwords.
+      </p>
+      <p>
+        Admins can manage users and their details, edit timetables, delete users, add/edit/delete rooms, contact
+        teachers and reply to support messages and change if user accounts are admins or not.
+      </p>
     </section>
-  </section>
-  <footer>
-    <p>
-      © Zoe Jones 2021
-    </p>
-    <a href="#">Back to top</a>
-  </footer>
-  <script id="script" type="text/javascript" class="teamdev2020" src="./js/script.js"></script>
-</body>
+    <section>
+      <h2>Gallery</h2>
+      <section id="gallery">
+        <button id="galleryForwardImg">&#10094;</button>
+        <img id="galleryImg" src="images/teamdev2020/1.png" alt="Timetable image." />
+        <button id="galleryBackwardImg">&#10095;</button>
+      </section>
+    </section>
+    <footer>
+      <p>© Zoe Jones 2021</p>
+      <a href="#">Back to top</a>
+    </footer>
+    <script id="script" type="text/javascript" class="teamdev2020" src="./js/script.js"></script>
+  </body>
 </html>
