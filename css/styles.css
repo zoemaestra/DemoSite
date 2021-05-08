@@ -200,7 +200,6 @@ section h2 {
 }
 
 #gallery img {
-  animation: imagefade 1s linear forwards;
   display: block;
   max-width: 75vw;
   max-height: 350px;
@@ -211,13 +210,13 @@ section h2 {
   border-radius: 10px;
 }
 
-@keyframes imagefade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.fadeIn {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0%;}
+  100% {opacity:100%;}
 }
 
 footer {

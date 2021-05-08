@@ -74,9 +74,14 @@ const gallery = (direction) => {
       currentImage--;
     }
   }
-  document.getElementById("galleryImg").src = `images/${document
+  const galleryImg = document.getElementById("galleryImg");
+  const galleryImgParent = galleryImg.parentElement;
+
+  galleryImg.remove();
+  galleryImg.src = `images/${document
     .getElementById("script")
     .getAttribute("class")}/${currentImage}.png`;
+  galleryImgParent.insertBefore(galleryImg, galleryImgParent.children[1]);
 };
 
 const loadObject = async () => {
